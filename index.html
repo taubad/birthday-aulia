@@ -6,7 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy 7th Birthday Aulia</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -15,129 +18,334 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:linear-gradient(#f8dcff,#ffd7ef);
-color:#333;
-text-align:center;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(#ffe0f4,#e6d5ff);
+overflow-x:hidden;
+color:#444;
 }
 
 section{
 padding:80px 20px;
 }
 
+h1{
+font-size:42px;
+}
+
+h2{
+font-size:28px;
+}
+
+p{
+line-height:1.8;
+}
+
 .cover{
 height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-background:linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)),
-url("https://wallpapercave.com/wp/wp9550674.jpg");
+
+background:
+linear-gradient(rgba(140,70,255,.4),rgba(255,120,220,.3)),
+url("https://images5.alphacoders.com/132/1323317.jpeg");
+
 background-size:cover;
 background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-.cover h1{
-font-size:55px;
-}
-
-.cover h2{
-font-size:30px;
-margin-top:15px;
+.overlay{
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(12px);
+padding:40px;
+border-radius:35px;
+width:90%;
+max-width:700px;
+color:white;
+box-shadow:0 0 30px rgba(255,255,255,.3);
 }
 
 .btn{
+display:inline-block;
 margin-top:30px;
-padding:15px 35px;
-background:#c54cff;
+padding:18px 40px;
+background:#d54cff;
 color:white;
 text-decoration:none;
-border-radius:30px;
-font-size:18px;
+border-radius:50px;
+box-shadow:0 0 20px #ff8ce7;
 }
 
 .card{
 background:white;
-max-width:800px;
+padding:40px;
+border-radius:30px;
+max-width:900px;
 margin:auto;
-padding:30px;
-border-radius:25px;
-box-shadow:0 0 20px rgba(0,0,0,.15);
+box-shadow:0 10px 30px rgba(0,0,0,.1);
 }
 
-.gallery img{
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.photo{
 width:250px;
-border-radius:20px;
-margin:10px;
+height:250px;
+border-radius:25px;
+background:#f7e8ff;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:18px;
+}
+
+.countdown{
+font-size:28px;
+font-weight:bold;
+color:#c83fff;
 }
 
 footer{
-padding:50px;
+padding:70px 20px;
+text-align:center;
 }
+
+@media(max-width:768px){
+
+h1{
+font-size:30px;
+}
+
+h2{
+font-size:22px;
+}
+
+.photo{
+width:150px;
+height:150px;
+}
+
+}
+
 </style>
 </head>
 <body>
 
 <section class="cover">
+
+<div class="overlay">
+
 <h1>🎀 Happy 7th Birthday 🎀</h1>
+
+<br>
+
 <h2>Olivia Filsa Fitria Badjoda</h2>
+
 <h2>(Aulia)</h2>
+
+<br>
+
 <h3>21 Juni 2026</h3>
+
+<br>
+
+<p>Turning 7 Years Old 🎂</p>
 
 <a href="#about" class="btn">
 💜 Buka Undangan
 </a>
+
+</div>
+
 </section>
 
 <section id="about">
+
 <div class="card">
+
 <h1>💜 About Aulia 💜</h1>
+
 <br>
-<p>Hai, aku Aulia 🩷</p>
-<br>
-<p>Tahun ini aku genap berusia 7 tahun 🎂✨</p>
-<br>
-<p>Yuk datang ke pesta ulang tahunku!</p>
+
+<p>
+Hai, aku Aulia 🩷
+</p>
+
+<p>
+Tahun ini aku genap berusia 7 tahun 🎂✨
+</p>
+
+<p>
+Yuk datang ke pesta ulang tahunku!
+</p>
+
 </div>
+
 </section>
 
 <section>
+
 <div class="card">
+
+<h1>⏳ Countdown</h1>
+
+<br>
+
+<div class="countdown" id="countdown"></div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
 <h1>📅 Event</h1>
+
 <br>
-<p>Minggu, 21 Juni 2026</p>
-<br>
-<p>Pukul 15.00 WITA</p>
-<br>
-<p>Jln. Awara Karya</p>
-<p>Samping Kantor SSI Gorontalo</p>
+
+<p>
+Minggu, 21 Juni 2026
+</p>
+
+<p>
+Pukul 15.00 WITA
+</p>
+
+<p>
+Jln. Awara Karya
+</p>
+
+<p>
+Samping Kantor SSI Gorontalo
+</p>
+
 </div>
+
 </section>
 
 <section>
-<div class="card gallery">
-<h1>📸 Gallery</h1>
-<br>
-<p>Nanti foto-foto Aulia akan ditambahkan di sini 💜</p>
-</div>
-</section>
 
-<section>
 <div class="card">
-<h1>📍 Location</h1>
+
+<h1>📸 Gallery</h1>
+
 <br>
-<p>Jln. Awara Karya</p>
-<p>Samping Kantor SSI Gorontalo</p>
+
+<div class="gallery">
+
+<div class="photo">
+Photo 1
 </div>
+
+<div class="photo">
+Photo 2
+</div>
+
+<div class="photo">
+Photo 3
+</div>
+
+<div class="photo">
+Photo 4
+</div>
+
+<div class="photo">
+Photo 5
+</div>
+
+<div class="photo">
+Photo 6
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h1>📍 Location</h1>
+
+<br>
+
+<p>
+Jln. Awara Karya
+</p>
+
+<p>
+Samping Kantor SSI Gorontalo
+</p>
+
+</div>
+
 </section>
 
 <footer>
-<h1>💕 Thank You 💕</h1>
+
+<h1>
+💕 Thank You 💕
+</h1>
+
 <br>
-<p>Terima kasih atas doa dan kehadiran keluarga serta sahabat tercinta.</p>
+
+<p>
+Terima kasih atas doa dan kehadiran keluarga serta sahabat tercinta.
+</p>
+
 <br>
-<h2>See You At The Party!</h2>
+
+<h2>
+See You At The Party!
+</h2>
+
+<br>
+
+<h2>
+🎀 Happy 7th Birthday 🎀
+</h2>
+
+<h3>
+Olivia Filsa Fitria Badjoda (Aulia)
+</h3>
+
 </footer>
+
+<script>
+
+const targetDate = new Date("June 21, 2026 15:00:00").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+
+const distance = targetDate-now;
+
+const days = Math.floor(distance/(1000*60*60*24));
+
+const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+
+const seconds = Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("countdown").innerHTML=
+
+days+" Hari "+hours+" Jam "+minutes+" Menit "+seconds+" Detik";
+
+},1000);
+
+</script>
 
 </body>
 </html>
